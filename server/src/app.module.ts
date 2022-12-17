@@ -9,6 +9,7 @@ import { DoctorsModule } from './doctor/doctors.module'
 import { AppointmentsModule } from './appointment/appointments.module'
 
 import { S3Module } from 'nestjs-s3'
+import { PayModule } from './pay/pay.module';
 
 @Module({
     controllers: [],
@@ -29,7 +30,8 @@ import { S3Module } from 'nestjs-s3'
         UsersModule,
         FileModule,
         DoctorsModule,
-        AppointmentsModule
+        AppointmentsModule,
+        PayModule
     ]
 })
 

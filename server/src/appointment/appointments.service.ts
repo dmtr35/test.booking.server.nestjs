@@ -66,6 +66,12 @@ export class AppointmentsService {
         return allUserAppointments
     }
 
+    async find() {
+        const response = await this.appointmentModel.find()
+        console.log(response)
+        return response
+    }
+
 
 }
 

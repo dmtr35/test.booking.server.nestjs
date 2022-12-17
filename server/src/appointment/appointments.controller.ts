@@ -41,6 +41,11 @@ export class AppointmentsController {
     getUserAppointments(@Param('id') id: string) {
         return this.appointmentsService.getUserAppointments(id)
     }
+    
+    @Get('/getAppointmentsAll')
+    find() {
+        return this.appointmentsService.find()
+    }
 
 
 }
